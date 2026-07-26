@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Srijan Mishra — CS Engineer & AI Enthusiast</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Source+Code+Pro:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+
+<body>
+
+
+  <div id="scroll-progress"></div>
+
+  <nav id="navbar" class="nav-at-top">
+    <div class="nav-logo">&lt;<span>Mishra</span>/&gt;</div>
+    <div class="nav-sidebar">
+      <a href="#hero" class="nav-icon-link active magnetic" title="Home">
+        <div class="icon-circle">🏠</div>
+      </a>
+      <a href="#about" class="nav-icon-link magnetic" title="About">
+        <div class="icon-circle">👤</div>
+      </a>
+      <a href="#skills" class="nav-icon-link magnetic" title="Skills">
+        <div class="icon-circle">🛠️</div>
+      </a>
+      <a href="#platforms" class="nav-icon-link magnetic" title="Practice">
+        <div class="icon-circle">📊</div>
+      </a>
+      <a href="#projects" class="nav-icon-link magnetic" title="Projects">
+        <div class="icon-circle">🎞️</div>
+      </a>
+      <a href="#education" class="nav-icon-link magnetic" title="Education">
+        <div class="icon-circle">🎓</div>
+      </a>
+      <a href="#contact" class="nav-icon-link magnetic" title="Contact">
+        <div class="icon-circle">✉️</div>
+      </a>
+      <a href="#about" class="nav-icon-link magnetic" title="Resume">
+        <div class="icon-circle">📄</div>
+      </a>
+    </div>
+    <div class="nav-right-bottom">
+      <button class="theme-toggle magnetic" id="theme-toggle" onclick="toggleTheme()" aria-label="Toggle Theme">
+        <div class="toggle-track">
+          <div class="toggle-sun"><i class="ri-sun-fill"></i></div>
+          <div class="toggle-moon"><i class="ri-moon-fill"></i></div>
+          <div class="toggle-dot"></div>
+        </div>
+      </button>
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#hero" onclick="toggleMenu()">Home</a>
+    <a href="#about" onclick="toggleMenu()">About</a>
+    <a href="#about" onclick="toggleMenu()">Resume</a>
+    <a href="#skills" onclick="toggleMenu()">Skills</a>
+    <a href="#platforms" onclick="toggleMenu()">Practice</a>
+    <a href="#projects" onclick="toggleMenu()">Projects</a>
+    <a href="#education" onclick="toggleMenu()">Education</a>
+    <a href="#contact" onclick="toggleMenu()">contact</a>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg-glow"></div>
+    <div class="hero-content" id="hero-tilt">
+      <div class="hero-text-area">
+        <div class="hero-header-area" data-animate style="animation-delay: 0.1s">
+          <div class="hero-profile-container">
+            <img src="profile-pic.png" alt="Srijan Mishra" class="hero-profile-pic">
+          </div>
+          <h1 class="hero-name">
+            <span class="first">Srijan</span> <span class="last">Mishra</span>
+          </h1>
+        </div>
+        <p class="hero-title" data-animate style="animation-delay: 0.2s">I'm <span id="typewriter"></span></p>
+
+        <div class="hero-socials" data-animate style="animation-delay: 0.3s">
+          <a href="https://linkedin.com/in/srijan-mishra05" target="_blank" class="social-icon-link magnetic"
+            title="LinkedIn"><i class="ri-linkedin-box-fill"></i></a>
+          <a href="https://github.com/srijan439" target="_blank" class="social-icon-link magnetic" title="GitHub"><i
+              class="ri-github-fill"></i></a>
+          <a href="https://instagram.com" target="_blank" class="social-icon-link magnetic" title="Instagram"><i
+              class="ri-instagram-fill"></i></a>
+          <a href="mailto:srijanm89@gmail.com" class="social-icon-link magnetic" title="Email"><i
+              class="ri-mail-fill"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll" data-animate style="animation-delay: 1s">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-header reveal">
+      <div class="section-label">01 / About Me</div>
+      <h2 class="section-title">Turning ideas into<br>intelligent solutions</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>Currently pursuing <strong>B.Tech at Lovely Professional University</strong>, I focus on the practical
+          implementation of <strong>Artificial Intelligence</strong> to solve tangible problems.</p>
+        <p>My technical background includes <strong>Machine Learning</strong> and <strong>Full-Stack Web
+            Development</strong>, all supported by a firm grasp of <strong>Data Structures and Algorithms</strong>. I am
+          committed to engineering effective, user-focused software that delivers real-world value.</p>
+        <div class="stats-row">
+          <div class="stat-card">
+            <div class="stat-num">8.38</div>
+            <div class="stat-lbl">CGPA</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">5+</div>
+            <div class="stat-lbl">Projects</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">5+</div>
+            <div class="stat-lbl">Certifications</div>
+          </div>
+        </div>
+
+      </div>
+      <div class="about-visual reveal reveal-delay-2">
+        <div class="resume-highlight" data-tilt>
+          <div class="rh-image-container">
+            <img src="resume/Screenshot 2026-03-20 025852.png" alt="Resume Highlight" class="rh-img">
+            <div class="rh-overlay">
+              <div class="rh-buttons">
+                <a href="resume/Srijan_CV.pdf" download="Srijan_CV.pdf" class="rh-btn download magnetic">
+                  <span class="rh-btn-icon">📥</span>
+                  <span class="rh-btn-text">Download</span>
+                </a>
+                <a href="resume/Srijan_CV.pdf" target="_blank" class="rh-btn view magnetic">
+                  <span class="rh-btn-icon">👁️</span>
+                  <span class="rh-btn-text">View</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="rh-caption">
+            <span class="rh-tag">RESUME / CV</span>
+            <span class="rh-filename">Srijan_CV.pdf</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-header reveal">
+      <div class="section-label">02 / Skills</div>
+      <h2 class="section-title">Technical toolkit</h2>
+    </div>
+    <div class="skills-grid" id="skills-grid">
+      <div class="skill-category reveal">
+        <div class="cat-header">
+          <div class="cat-icon">💻</div>
+          <div class="cat-title">Core Programming</div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-top"><span class="skill-name">C</span><span class="skill-pct">80%</span></div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-pct="80"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-top"><span class="skill-name">C++</span><span class="skill-pct">82%</span></div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-pct="82"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-top"><span class="skill-name">Java</span><span class="skill-pct">75%</span></div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-pct="75"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-top"><span class="skill-name">Python</span><span class="skill-pct">88%</span></div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-pct="88"></div>
+          </div>
+        </div>
+      </div>
+      <div class="skill-category reveal reveal-delay-1">
+        <div class="cat-header">
+          <div class="cat-icon">🌐</div>
+          <div class="cat-title">Web Development</div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-top"><span class="skill-name">HTML / CSS</span><span class="skill-pct">90%</span></div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-pct="90"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-top"><span class="skill-name">JavaScript</span><span class="skill-pct">75%</span></div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-pct="75"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-top"><span class="skill-name">React</span><span class="skill-pct">70%</span></div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-pct="70"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-top"><span class="skill-name">Node.js & Express</span><span class="skill-pct">65%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-pct="65"></div>
+          </div>
+        </div>
+      </div>
+      <div class="skill-category reveal reveal-delay-1">
+        <div class="cat-header">
+          <div class="cat-icon">🤖</div>
+          <div class="cat-title">AI / ML Stack</div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-top"><span class="skill-name">NumPy &amp; Pandas</span><span class="skill-pct">85%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-pct="85"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-top"><span class="skill-name">Scikit-Learn</span><span class="skill-pct">80%</span></div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-pct="80"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-top"><span class="skill-name">Matplotlib</span><span class="skill-pct">78%</span></div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-pct="78"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-top"><span class="skill-name">Data Preprocessing</span><span class="skill-pct">83%</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-pct="83"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-top"><span class="skill-name">Reinforcement Learning</span><span
+              class="skill-pct">65%</span></div>
+          <div class="skill-bar">
+            <div class="skill-fill" data-pct="65"></div>
+          </div>
+        </div>
+      </div>
+      <div class="skill-category reveal reveal-delay-2">
+        <div class="cat-header">
+          <div class="cat-icon">🛠️</div>
+          <div class="cat-title">Tools &amp; Platforms</div>
+        </div>
+        <div class="tools-grid">
+          <div class="tool-item">
+            <div class="tool-icon">🐉</div>
+            <div class="tool-name">Kali Linux</div>
+          </div>
+          <div class="tool-item">
+            <div class="tool-icon">🖥️</div>
+            <div class="tool-name">VMware</div>
+          </div>
+          <div class="tool-item">
+            <div class="tool-icon">🐧</div>
+            <div class="tool-name">Ubuntu</div>
+          </div>
+          <div class="tool-item">
+            <div class="tool-icon">📊</div>
+            <div class="tool-name">Jira</div>
+          </div>
+          <div class="tool-item">
+            <div class="tool-icon">🐍</div>
+            <div class="tool-name">Django</div>
+          </div>
+          <div class="tool-item">
+            <div class="tool-icon">🐙</div>
+            <div class="tool-name">Git</div>
+          </div>
+          <div class="tool-item">
+            <div class="tool-icon">💻</div>
+            <div class="tool-name">VS Code</div>
+          </div>
+          <div class="tool-item">
+            <div class="tool-icon">📓</div>
+            <div class="tool-name">Jupyter</div>
+          </div>
+        </div>
+      </div>
+      <div class="skill-category reveal reveal-delay-3">
+        <div class="cat-header">
+          <div class="cat-icon">🌟</div>
+          <div class="cat-title">Soft Skills</div>
+        </div>
+        <div class="soft-skills-list">
+          <div class="soft-skill-item">
+            <div class="soft-icon">🧩</div>
+            <div class="soft-name">Problem-Solving</div>
+          </div>
+          <div class="soft-skill-item">
+            <div class="soft-icon">🌱</div>
+            <div class="soft-name">Adaptability</div>
+          </div>
+          <div class="soft-skill-item">
+            <div class="soft-icon">🗣️</div>
+            <div class="soft-name">Communication</div>
+          </div>
+          <div class="soft-skill-item">
+            <div class="soft-icon">🧠</div>
+            <div class="soft-name">Critical Thinking</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRACTICE PLATFORMS -->
+  <section id="platforms">
+    <div class="section-header reveal">
+      <div class="section-label">03 / Practice Platforms</div>
+      <h2 class="section-title">Continuous learning</h2>
+    </div>
+    <div class="platforms-container reveal">
+      <div class="bar-graph-wrapper">
+        <!-- LeetCode -->
+        <div class="graph-row">
+          <div class="graph-label">
+            <span class="platform-icon leetcode">&lt;/&gt;</span>
+            <span class="platform-name">LeetCode</span>
+          </div>
+          <div class="graph-bar-container">
+            <div class="graph-bar leetcode-bar" style="--width: 90%;">
+              <span class="bar-value">300+ Solved</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- GFG -->
+        <div class="graph-row">
+          <div class="graph-label">
+            <span class="platform-icon gfg">GFG</span>
+            <span class="platform-name">GeeksforGeeks</span>
+          </div>
+          <div class="graph-bar-container">
+            <div class="graph-bar gfg-bar" style="--width: 75%;">
+              <span class="bar-value">200+ Solved</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- HackerRank -->
+        <div class="graph-row">
+          <div class="graph-label">
+            <span class="platform-icon hr">HR</span>
+            <span class="platform-name">HackerRank</span>
+          </div>
+          <div class="graph-bar-container">
+            <div class="graph-bar hr-bar" style="--width: 95%;">
+              <span class="bar-value">5★ Gold Badge</span>
+            </div>
+          </div>
+          <div class="hr-mini-badges">
+            <span class="mini-badge">C++ 4★</span>
+            <span class="mini-badge">Java 3★</span>
+            <span class="mini-badge">Python 4★</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MONTHLY PROGRESS -->
+    <div class="activity-section reveal" style="margin-top:3rem;">
+      <div class="section-label" style="margin-bottom:1.5rem;font-size:0.75rem;">// monthly_coding_activity</div>
+      <div class="activity-card">
+        <div class="activity-chart" id="activity-chart">
+          <!-- JS will populate bars here -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-header reveal">
+      <div class="section-label">04 / Projects</div>
+      <h2 class="section-title">Things I've built</h2>
+    </div>
+    <div class="projects-container">
+      <button class="slider-btn prev magnetic" onclick="moveSlider('projects', -1)"><i
+          class="ri-arrow-left-s-line"></i></button>
+      <div class="projects-wrapper">
+        <div class="projects-track" id="projects-track">
+          <div class="project-card">
+            <div class="project-image-container">
+              <img src="assets/event_platform.png" alt="Virtual Event Hosting Platform" class="project-card-img">
+              <div class="project-image-overlay"></div>
+            </div>
+            <div class="project-header">
+              <div class="project-meta">
+                <div class="project-num">01</div>
+                <div class="project-date">SEP 2024</div>
+              </div>
+              <h3 class="project-title">Virtual Event Hosting Web Platform</h3>
+            </div>
+            <div class="project-body">
+              <p class="project-desc">An interactive web platform for browsing and booking event venues. Features rich
+                venue listings with images, pricing transparency, and detailed venue information to streamline the event
+                booking experience.</p>
+              <div class="project-tech">
+                <span class="tech-badge">HTML</span>
+                <span class="tech-badge">CSS</span>
+                <span class="tech-badge">JavaScript</span>
+              </div>
+              <a href="https://github.com/srijan439/Virtual-event-hosting" target="_blank" class="project-link">View on
+                GitHub →</a>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image-container">
+              <img src="assets/game_ai.png" alt="Game AI based on Reinforcement Learning" class="project-card-img">
+              <div class="project-image-overlay"></div>
+            </div>
+            <div class="project-header">
+              <div class="project-meta">
+                <div class="project-num">02</div>
+                <div class="project-date">APR 2025</div>
+              </div>
+              <h3 class="project-title">Game AI based on Reinforcement Learning</h3>
+            </div>
+            <div class="project-body">
+              <p class="project-desc">An AI agent that learns from gameplay using reinforcement learning techniques. The
+                agent continuously improves its decision-making, designed specifically for cognitive learning
+                applications
+                with an interactive Django-powered UI.</p>
+              <div class="project-tech">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">Django</span>
+                <span class="tech-badge">HTML</span>
+                <span class="tech-badge">CSS</span>
+              </div>
+              <a href="https://github.com/srijan439/Battle-with-AI" target="_blank" class="project-link">View on GitHub
+                →</a>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image-container">
+              <img src="assets/symptech.png" alt="SympTech Diagnostic Assistant" class="project-card-img">
+              <div class="project-image-overlay"></div>
+            </div>
+            <div class="project-header">
+              <div class="project-meta">
+                <div class="project-num">03</div>
+                <div class="project-date">FEB 2026</div>
+              </div>
+              <h3 class="project-title">SympTech Diagnostic Assistant</h3>
+            </div>
+            <div class="project-body">
+              <p class="project-desc">An AI-powered medical diagnostic system combining ML predictions with rule-based
+                inference engine. Features intelligent triage scoring for urgency classification, helping users
+                understand
+                symptoms and seek appropriate care.</p>
+              <div class="project-tech">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">NumPy</span>
+                <span class="tech-badge">Pandas</span>
+                <span class="tech-badge">Scikit-learn</span>
+              </div>
+              <a href="https://github.com/srijan439" target="_blank" class="project-link">View on GitHub →</a>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image-container">
+              <img src="assets/job_search.png" alt="Job Search Platform" class="project-card-img">
+              <div class="project-image-overlay"></div>
+            </div>
+            <div class="project-header">
+              <div class="project-meta">
+                <div class="project-num">04</div>
+                <div class="project-date">MAR 2026</div>
+              </div>
+              <h3 class="project-title">Job Search Platform</h3>
+            </div>
+            <div class="project-body">
+              <p class="project-desc">A full-stack job search platform that allows users to browse, apply, and manage
+                job
+                listings efficiently. Built using modern web technologies, it features secure authentication, dynamic
+                filtering, and a responsive UI.</p>
+              <div class="project-tech">
+                <span class="tech-badge">React</span>
+                <span class="tech-badge">Node.js</span>
+                <span class="tech-badge">Express</span>
+                <span class="tech-badge">MongoDB</span>
+              </div>
+              <div style="display: flex; gap: 1.5rem;">
+                <a href="https://github.com/srijan439" target="_blank" class="project-link">View on GitHub →</a>
+                <a href="https://job-sprint-pi.vercel.app/" target="_blank" class="project-link">Live Preview ↗</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="slider-btn next magnetic" onclick="moveSlider('projects', 1)"><i
+          class="ri-arrow-right-s-line"></i></button>
+    </div>
+  </section>
+
+  <!-- EDUCATION & TRAINING -->
+  <section id="education">
+    <div class="section-header reveal">
+      <div class="section-label">05 / Education &amp; Training</div>
+      <h2 class="section-title">Academic journey</h2>
+    </div>
+    <div class="timeline reveal">
+      <div class="timeline-item">
+        <div class="timeline-dot">🎓</div>
+        <div class="timeline-content">
+          <div class="timeline-year">2023 — PRESENT</div>
+          <div class="timeline-title">B.Tech Computer Science Engineering</div>
+          <div class="timeline-sub">Lovely Professional University · CGPA: 8.20</div>
+          <div class="timeline-desc">Specializing in AI/ML, Data Structures & Algorithms, and Full Stack Development.
+            Actively involved in building real-world projects.</div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot">📚</div>
+        <div class="timeline-content">
+          <div class="timeline-year">INTERMEDIATE</div>
+          <div class="timeline-title">Higher Secondary Education</div>
+          <div class="timeline-desc">Strong foundation in Mathematics and Science that led to pursuing Computer Science
+            Engineering.</div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <!-- <div class="timeline-dot">🏫</div> -->
+
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot">⚙️</div>
+        <div class="timeline-content">
+          <div class="timeline-year">TRAINING</div>
+          <div class="timeline-title">Data Structures &amp; Algorithms (C++)</div>
+          <div class="timeline-sub">Splen Technologies</div>
+          <div class="timeline-desc">Intensive training covering OOPs concepts, file handling, advanced data structures,
+            and algorithm optimization techniques for competitive programming.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CERTIFICATIONS -->
+    <div style="margin-top:6rem;" class="reveal">
+      <div class="section-label" style="margin-bottom:2rem;">Certifications</div>
+      <div class="certs-container">
+        <button class="slider-btn prev magnetic" onclick="moveSlider('certs', -1)"><i
+            class="ri-arrow-left-s-line"></i></button>
+        <div class="certs-wrapper">
+          <div class="certs-track" id="certs-track">
+            <div class="cert-card" data-tilt>
+              <div class="cert-image-container">
+                <a href="certificates/AlgoUniversity Graph Camp.png" target="_blank"
+                  style="display: block; width: 100%; height: 100%;">
+                  <img src="certificates/AlgoUniversity Graph Camp.png" alt="AlgoUniversity Graph Camp"
+                    class="cert-image">
+                  <div class="cert-overlay">
+                    <span>View Certificate</span>
+                  </div>
+                </a>
+              </div>
+              <div class="cert-info">
+                <div class="cert-header">
+                  <div class="cert-icon">📉</div>
+                  <div class="cert-name">Graph Camp</div>
+                </div>
+                <div class="cert-issuer">AlgoUniversity</div>
+              </div>
+            </div>
+
+            <div class="cert-card" data-tilt>
+              <div class="cert-image-container">
+                <a href="certificates/DSA Splen.png" target="_blank" style="display: block; width: 100%; height: 100%;">
+                  <img src="certificates/DSA Splen.png" alt="DSA Splen Technologies" class="cert-image">
+                  <div class="cert-overlay">
+                    <span>View Certificate</span>
+                  </div>
+                </a>
+              </div>
+              <div class="cert-info">
+                <div class="cert-header">
+                  <div class="cert-icon">🔢</div>
+                  <div class="cert-name">DSA with C++</div>
+                </div>
+                <div class="cert-issuer">Splen Technologies</div>
+              </div>
+            </div>
+
+            <div class="cert-card" data-tilt>
+              <div class="cert-image-container">
+                <a href="certificates/Delloite.png" target="_blank" style="display: block; width: 100%; height: 100%;">
+                  <img src="certificates/Delloite.png" alt="Deloitte Certification" class="cert-image">
+                  <div class="cert-overlay">
+                    <span>View Certificate</span>
+                  </div>
+                </a>
+              </div>
+              <div class="cert-info">
+                <div class="cert-header">
+                  <div class="cert-icon">🏢</div>
+                  <div class="cert-name">Virtual Internship</div>
+                </div>
+                <div class="cert-issuer">Deloitte</div>
+              </div>
+            </div>
+
+            <div class="cert-card" data-tilt>
+              <div class="cert-image-container">
+                <a href="certificates/Java.png" target="_blank" style="display: block; width: 100%; height: 100%;">
+                  <img src="certificates/Java.png" alt="Java Programming" class="cert-image">
+                  <div class="cert-overlay">
+                    <span>View Certificate</span>
+                  </div>
+                </a>
+              </div>
+              <div class="cert-info">
+                <div class="cert-header">
+                  <div class="cert-icon">☕</div>
+                  <div class="cert-name">Java Programming</div>
+                </div>
+                <div class="cert-issuer">DevTown</div>
+              </div>
+            </div>
+
+            <div class="cert-card" data-tilt>
+              <div class="cert-image-container">
+                <a href="certificates/Python.png" target="_blank" style="display: block; width: 100%; height: 100%;">
+                  <img src="certificates/Python.png" alt="Python for Data Science" class="cert-image">
+                  <div class="cert-overlay">
+                    <span>View Certificate</span>
+                  </div>
+                </a>
+              </div>
+              <div class="cert-info">
+                <div class="cert-header">
+                  <div class="cert-icon">🐍</div>
+                  <div class="cert-name">Python Course</div>
+                </div>
+                <div class="cert-issuer">Coursera</div>
+              </div>
+            </div>
+
+            <div class="cert-card" data-tilt>
+              <div class="cert-image-container">
+                <a href="certificates/hackerrank.png" target="_blank"
+                  style="display: block; width: 100%; height: 100%;">
+                  <img src="certificates/hackerrank.png" alt="HackerRank Problem Solving" class="cert-image">
+                  <div class="cert-overlay">
+                    <span>View Certificate</span>
+                  </div>
+                </a>
+              </div>
+              <div class="cert-info">
+                <div class="cert-header">
+                  <div class="cert-icon">💡</div>
+                  <div class="cert-name">Problem Solving</div>
+                </div>
+                <div class="cert-issuer">HackerRank</div>
+              </div>
+            </div>
+
+            <div class="cert-card" data-tilt>
+              <div class="cert-image-container">
+                <a href="certificates/DBMS.png" target="_blank" style="display: block; width: 100%; height: 100%;">
+                  <img src="certificates/DBMS.png" alt="DBMS NPTEL Certificate" class="cert-image">
+                  <div class="cert-overlay">
+                    <span>View Certificate</span>
+                  </div>
+                </a>
+              </div>
+              <div class="cert-info">
+                <div class="cert-header">
+                  <div class="cert-icon">🗄️</div>
+                  <div class="cert-name">DBMS</div>
+                </div>
+                <div class="cert-issuer">NPTEL</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="slider-btn next magnetic" onclick="moveSlider('certs', 1)"><i
+            class="ri-arrow-right-s-line"></i></button>
+      </div>
+
+      <div style="text-align: center; margin-top: 3rem;">
+        <a href="https://drive.google.com/drive/folders/1eNTrBff-0jereyA3LjqvmMR1efTyFE9q?usp=drive_link"
+          target="_blank" class="rh-btn view magnetic"
+          style="display: inline-flex; width: auto; padding: 0.8rem 1.5rem; text-decoration: none; align-items: center; gap: 0.5rem; border-radius: 8px;">
+          <span class="rh-btn-icon" style="font-size: 1.2rem;">📁</span>
+          <span class="rh-btn-text"
+            style="font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 600; font-size: 0.9rem;">View All
+            Certificates on Drive</span>
+        </a>
+      </div>
+    </div>
+
+
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-header reveal">
+      <div class="section-label">06 / Contact</div>
+      <h2 class="section-title">Let's connect</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <p>I'm always open to discussing new projects, interesting ideas, or opportunities to collaborate. Whether
+          you're a recruiter, fellow developer, or just curious — my inbox is open.</p>
+        <div class="contact-links">
+          <a href="mailto:srijanm89@gmail.com" class="contact-item">
+            <div class="contact-icon">✉️</div>
+            <div><span class="contact-label">EMAIL</span><span class="contact-value">srijanm89@gmail.com</span></div>
+          </a>
+          <a href="tel:+919569256657" class="contact-item">
+            <div class="contact-icon">📱</div>
+            <div><span class="contact-label">PHONE</span><span class="contact-value">+91-9569256657</span></div>
+          </a>
+          <a href="https://linkedin.com/in/srijan-mishra05" target="_blank" class="contact-item">
+            <div class="contact-icon">💼</div>
+            <div><span class="contact-label">LINKEDIN</span><span class="contact-value">srijan-mishra05</span></div>
+          </a>
+          <a href="https://github.com/srijan439" target="_blank" class="contact-item">
+            <div class="contact-icon">🐙</div>
+            <div><span class="contact-label">GITHUB</span><span class="contact-value">srijan439</span></div>
+          </a>
+        </div>
+      </div>
+      <div class="reveal reveal-delay-2">
+        <div class="contact-form">
+          <div class="form-group">
+            <label>FULL NAME</label>
+            <input type="text" placeholder="Srijan Mishra">
+          </div>
+          <div class="form-group">
+            <label>EMAIL</label>
+            <input type="email" placeholder="xyz@gmail.com">
+          </div>
+          <div class="form-group">
+            <label>MESSAGE</label>
+            <textarea placeholder="Hey Srijan, I'd love to connect about..."></textarea>
+          </div>
+          <button class="form-submit magnetic" onclick="handleSubmit()">Send Message ↗</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-brand">&lt;<span>Srijan Mishra</span> /&gt; — Built with passion &amp; code</div>
+    <div class="footer-social">
+      <a href="https://github.com/srijan439" target="_blank" class="social-link" title="GitHub"><i
+          class="ri-github-fill"></i></a>
+      <a href="https://linkedin.com/in/srijan-mishra05" target="_blank" class="social-link" title="LinkedIn"><i
+          class="ri-linkedin-box-fill"></i></a>
+      <a href="mailto:srijanm89@gmail.com" class="social-link" title="Email"><i class="ri-mail-fill"></i></a>
+    </div>
+    <div class="footer-copy">© 2026 Srijan Mishra. All rights reserved.</div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
